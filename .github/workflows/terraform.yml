@@ -15,5 +15,7 @@ jobs:
         version: "0.12.26"
     - name: terraform validate
       run: terraform init && terraform validate
+    - name: "Run Kubernetes in Docker"
+      uses: engineerd/setup-kind@v0.4.0
     - name: Run tests
       run: go test -v ./...
