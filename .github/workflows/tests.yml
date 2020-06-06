@@ -1,4 +1,4 @@
-name: terraform
+name: tests
 on: [push]
 jobs:
   test:
