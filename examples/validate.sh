@@ -2,6 +2,4 @@
 
 set -eu
 
-for example in ./examples/*; do
-  sh -c "cd $example && terraform init && terraform validate"
-done
+find examples -type d -depth 1 -exec sh -c 'cd $1 && terraform init && terraform validate' _ {} \;
