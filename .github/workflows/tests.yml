@@ -19,3 +19,5 @@ jobs:
       uses: engineerd/setup-kind@v0.4.0
     - name: Run tests
       run: go test -v ./...
+    - name: Validate examples
+      run: ./examples/validate.sh
