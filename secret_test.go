@@ -25,7 +25,6 @@ func TestKubernetesDockerSecret(t *testing.T) {
 				"docker.reg": map[string]interface{}{
 					"username": "USER",
 					"password": "PASS",
-					"email":    nil,
 				},
 			},
 		},

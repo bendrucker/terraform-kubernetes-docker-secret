@@ -2,10 +2,9 @@ variable "registries" {
   type = map(object({
     username = string
     password = string
-    email    = string
   }))
 
-  description = "Map of registry hostnames to credentials. Email is optional and will be omitted if empty/null."
+  description = "Map of registry hostnames to credentials (username, password)."
 }
 
 variable "name" {

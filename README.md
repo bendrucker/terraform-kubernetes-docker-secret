@@ -15,7 +15,6 @@ module "image_pull_secret" {
     "https://index.docker.io/v1/" = {
       username = "user"
       password = "password"
-      email = null
     }
   } 
 }
