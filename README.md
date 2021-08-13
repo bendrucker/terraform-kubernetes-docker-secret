@@ -6,7 +6,7 @@
 
 ```tf
 module "image_pull_secret" {
-  source = "bendrucker/docker-secret/kubernetes
+  source = "bendrucker/docker-secret/kubernetes"
 
   name      = "dockerhub"
   namespace = "default"
