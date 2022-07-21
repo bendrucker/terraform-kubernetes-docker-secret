@@ -1,6 +1,6 @@
 module github.com/bendrucker/terraform-kubernetes-docker-secret
 
-go 1.14
+go 1.18
 
 require (
 	github.com/gruntwork-io/terratest v0.40.18
