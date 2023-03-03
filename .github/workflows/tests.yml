@@ -9,14 +9,7 @@ jobs:
       uses: actions/setup-go@v3
       with:
         go-version-file: go.mod
-    - uses: actions/cache@v3
-      with:
-        path: |
-          ~/go/pkg/mod
-          ~/.cache/go-build
-        key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
-        restore-keys: |
-          ${{ runner.os }}-go-
+        cache: true
     - uses: hashicorp/setup-terraform@v2
       with:
         terraform_wrapper: false
