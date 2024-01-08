@@ -3,7 +3,7 @@ module github.com/bendrucker/terraform-kubernetes-docker-secret
 go 1.21.5
 
 require (
-	github.com/gruntwork-io/terratest v0.46.8
+	github.com/gruntwork-io/terratest v0.46.9
 	github.com/stretchr/testify v1.8.4
 )
 
