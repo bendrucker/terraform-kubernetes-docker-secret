@@ -22,9 +22,10 @@ module "image_pull_secret" {
 
 ## Testing
 
+This module is tested with [`terraform test`](https://developer.hashicorp.com/terraform/language/tests).
+
 ```sh
-minikube start
-go test -v ./...
+terraform test
 ```
 
 ## License
