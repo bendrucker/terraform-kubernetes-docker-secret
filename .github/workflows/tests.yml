@@ -5,11 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v7
-    - name: Setup go
-      uses: actions/setup-go@v6
-      with:
-        go-version-file: go.mod
-        cache: true
     - uses: hashicorp/setup-terraform@v4
       with:
         terraform_wrapper: false
@@ -20,7 +15,7 @@ jobs:
       with:
         version: v0.17.0
     - name: Run tests
-      run: go test -v ./...
+      run: terraform test
       env:
         KUBE_CONFIG_PATHS: ~/.kube/config
     - name: Validate examples
